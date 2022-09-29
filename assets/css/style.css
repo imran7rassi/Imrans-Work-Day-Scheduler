@@ -35,3 +35,8 @@
     border-left: 1px dotted #1f1f1f;
     font-size: 22px;
   }
+
+  footer {
+    text-align: center;
+    padding-top: 16px;
+  }
