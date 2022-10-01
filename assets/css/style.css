@@ -8,7 +8,12 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     color: #1f1f1f;
-  }
+    background-image: url(https://pics.freeartbackgrounds.com/fullhd/Beautiful_Sunset_Background-1366.jpg);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
   /* Jumbotron */
   h1,
   p.lead {
@@ -60,7 +65,7 @@
   .future {
     background-color: #7bed9f;
   }
-  
+
   .saveBtn {
     border-left: 1px solid #1f1f1f;
     border-top-right-radius: 15px;
@@ -73,6 +78,7 @@
   footer {
     text-align: center;
     padding-top: 16px;
+    color: #fff;
   }
 
   .mb-3,
