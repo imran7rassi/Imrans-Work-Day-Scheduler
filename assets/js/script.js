@@ -1,4 +1,5 @@
 
+// adding global event handlers //
 window.onload = function(){
     colorCode();
     nineAM();
@@ -106,6 +107,8 @@ function colorCode() {
 // WHEN I refresh the page
 // THEN the saved events persist
 
+// add save buton var and queryselector to each timeblock on the save buttons //
+// add eventlistener to each time block to eneter an event //
 function nineAM() {
     var input_textarea = document.querySelector("#comment9am");
     var output_div = document.querySelector("#comment9am");
@@ -210,5 +213,58 @@ function nineAM() {
       localStorage.setItem("content6", input_textarea6.value);
   
       output_div6.textContent = input_textarea6.value;
+    }
+  }
+
+  function threePM() {
+    var input_textarea7 = document.querySelector("#comment3pm");
+    var output_div7 = document.querySelector("#comment3pm");
+    var save_button7 = document.querySelector("#button3pm");
+  
+    save_button7.addEventListener("click", updateOutput7);
+  
+    output_div7.textContent = localStorage.getItem("content7");
+    input_textarea7.value = localStorage.getItem("content7");
+  
+    function updateOutput7() {
+      localStorage.setItem("content7", input_textarea7.value);
+  
+      output_div7.textContent = input_textarea7.value;
+    }
+  }
+  
+  
+  function fourPM() {
+    var input_textarea8 = document.querySelector("#comment4pm");
+    var output_div8 = document.querySelector("#comment4pm");
+    var save_button8 = document.querySelector("#button4pm");
+  
+    save_button8.addEventListener("click", updateOutput8);
+  
+    output_div8.textContent = localStorage.getItem("content8");
+    input_textarea8.value = localStorage.getItem("content8");
+  
+    function updateOutput8() {
+      localStorage.setItem("content8", input_textarea8.value);
+  
+      output_div8.textContent = input_textarea8.value;
+    }
+  }
+  
+  
+  function fivePM() {
+    var input_textarea9 = document.querySelector("#comment5pm");
+    var output_div9 = document.querySelector("#comment5pm");
+    var save_button9 = document.querySelector("#button5pm");
+  
+    save_button9.addEventListener("click", updateOutput9);
+  
+    output_div9.textContent = localStorage.getItem("content9");
+    input_textarea9.value = localStorage.getItem("content9");
+  
+    function updateOutput9() {
+      localStorage.setItem("content9", input_textarea9.value);
+  
+      output_div9.textContent = input_textarea9.value;
     }
   }
