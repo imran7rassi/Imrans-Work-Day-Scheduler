@@ -159,3 +159,56 @@ function nineAM() {
       output_div3.textContent = input_textarea3.value;
     }
   }
+
+  function twelvePM() {
+    var input_textarea4 = document.querySelector("#comment12pm");
+    var output_div4 = document.querySelector("#comment12pm");
+    var save_button4 = document.querySelector("#button12pm");
+  
+    save_button4.addEventListener("click", updateOutput4);
+  
+    output_div4.textContent = localStorage.getItem("content4");
+    input_textarea4.value = localStorage.getItem("content4");
+  
+    function updateOutput4() {
+      localStorage.setItem("content4", input_textarea4.value);
+  
+      output_div4.textContent = input_textarea4.value;
+    }
+  }
+  
+  
+  function onePM() {
+    var input_textarea5 = document.querySelector("#comment1pm");
+    var output_div5 = document.querySelector("#comment1pm");
+    var save_button5 = document.querySelector("#button1pm");
+  
+    save_button5.addEventListener("click", updateOutput5);
+  
+    output_div5.textContent = localStorage.getItem("content5");
+    input_textarea5.value = localStorage.getItem("content5");
+  
+    function updateOutput5() {
+      localStorage.setItem("content5", input_textarea5.value);
+  
+      output_div5.textContent = input_textarea5.value;
+    }
+  }
+  
+  
+  function twoPM() {
+    var input_textarea6 = document.querySelector("#comment2pm");
+    var output_div6 = document.querySelector("#comment2pm");
+    var save_button6 = document.querySelector("#button2pm");
+  
+    save_button6.addEventListener("click", updateOutput6);
+  
+    output_div6.textContent = localStorage.getItem("content6");
+    input_textarea6.value = localStorage.getItem("content6");
+  
+    function updateOutput6() {
+      localStorage.setItem("content6", input_textarea6.value);
+  
+      output_div6.textContent = input_textarea6.value;
+    }
+  }
