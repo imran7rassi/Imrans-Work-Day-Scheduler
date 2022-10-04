@@ -18,7 +18,7 @@ The link of the webpage is: https://imran7rassi.github.io/Imrans-Work-Day-Schedu
 - Step 3 : Then click the Save button.
 - Step 4 : When you refresh the page your schedule will be still there until you remove it.
 
-<img src="./assets/images/work-day/" >
+<img src="./assets/images/work-day.jpg/" >
 
 
 ## Credits
